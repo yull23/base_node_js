@@ -3,7 +3,7 @@
 		/* Base Options: */
 		"esModuleInterop": true,
 		"skipLibCheck": true,
-		"target": "es2022",
+		"target": "ES2022",
 		"allowJs": true,
 		"resolveJsonModule": true,
 		"moduleDetection": "force",
@@ -16,14 +16,15 @@
 		/* If transpiling with TypeScript: */
 		"moduleResolution": "NodeNext",
 		"module": "NodeNext",
-		"outDir": "dist",
+		"outDir": "./dist",
 		"sourceMap": true,
+		"baseUrl": "./",
+		"incremental": true,
+		"forceConsistentCasingInFileNames": false,
+		"noFallthroughCasesInSwitch": false,
 
-		/* AND if you're building for a library: */
+		/* Other Options: */
 		"declaration": true,
-
-		/* AND if you're building for a library in a monorepo: */
-		"composite": true,
 		"declarationMap": true
 	},
 	"include": ["src/**/*.ts", ".eslintrc.js"],
